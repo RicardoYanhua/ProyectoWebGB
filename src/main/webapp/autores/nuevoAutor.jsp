@@ -8,6 +8,5 @@
 </head>
 <body>
 
-<h5>Hola mundo</h5>
 </body>
 </html>

@@ -6,7 +6,7 @@ import com.unu.proyectoWebGB.beans.*;
 
 public class AutoresModel {
 
-	public List<Autor> listarAutores(){
+	public List<Autor> getlistarAutores(){
 		
 		ArrayList<Autor> autores = new ArrayList<>();
 		autores.add(new Autor(1,"García Marquez", "Colombiana"));

@@ -17,7 +17,7 @@ public class Autor {
 	private String nacionalidad;
 	private String nombre;
 
-	public int getIdAutor() {
+	public int getIdAutor(){
 		return idAutor;
 	}
 
