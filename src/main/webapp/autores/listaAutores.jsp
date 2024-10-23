@@ -11,6 +11,13 @@
 <title>ListarAutores</title>
 
 
+<%
+String url = "http://localhost:8080/proyectoWebGB/";
+%>
+<a type = "button" href = "<%=url%>AutoresController?op=nuevo">  Nuevo Autor</a>
+
+
+
 
 <table id="tabla" border="1">
 	 <thead>

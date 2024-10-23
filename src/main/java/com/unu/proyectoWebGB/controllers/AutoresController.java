@@ -43,6 +43,12 @@ public class AutoresController extends HttpServlet {
 		case "listar":
 			listar(request, response);
 			break;
+		 case "nuevo":
+			 request.getRequestDispatcher("/autores/nuevoAutor.jsp").forward(request, response);
+		 break;
+		 
+
+
 
 		
 
