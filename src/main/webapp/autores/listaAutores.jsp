@@ -16,7 +16,7 @@
 	 <thead>
 		 <tr>
 			<th>Codigo del autor</th>
-			<th>Nacionalidad</th>.33333
+			<th>Nacionalidad</th>
 			<th>Nombre del autor</th>
 			<th>Operaciones</th>
 		 </tr>

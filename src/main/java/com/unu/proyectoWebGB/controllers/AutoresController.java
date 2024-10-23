@@ -11,9 +11,7 @@ import java.util.Iterator;
 import com.unu.proyectoWebGB.beans.Autor;
 import com.unu.proyectoWebGB.models.AutoresModel;
 
-/**
- * Servlet implementation class AutoresController
- */
+
 public class AutoresController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	AutoresModel modelo = new AutoresModel();
@@ -46,24 +44,22 @@ public class AutoresController extends HttpServlet {
 			listar(request, response);
 			break;
 
-		case "nuevo":
-			 nuevo(request, response);
-		 break;
-
+		
 
 		}
 	}
 	
-	private void nuevo (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("nuevoAutor", modelo.getlistarAutores());
-		request.getRequestDispatcher("/autores/nuevoAutor.jsp").forward(request, response);
-		
-	}
 
 	private void listar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("listaAutores", modelo.getlistarAutores());
-		request.getRequestDispatcher("/autores/listaAutores.jsp").forward(request, response);
 		
+		try {
+			request.setAttribute("listaAutores", modelo.listarAutores());
+			request.getRequestDispatcher("/autores/listaAutores.jsp").forward(request, response);
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		/*
 		Iterator<Autor> it = modelo.getlistarAutores().iterator();
 		while(it.hasNext()) {
